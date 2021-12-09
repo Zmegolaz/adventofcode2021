@@ -26,7 +26,5 @@ countIncreases(InputFile, {ok, OldLine}, {ok, NewLine}, Increases) ->
 			countIncreases(InputFile, {ok, NewLine}, file:read_line(InputFile), Increases+1);
 		false ->
 			countIncreases(InputFile, {ok, NewLine}, file:read_line(InputFile), Increases)
-	end,
-	ok.
-
+	end.
 

@@ -27,7 +27,5 @@ currentPos(InputFile, {ok, Command}, Pos, Depth, Aim) ->
 			currentPos(InputFile, file:read_line(InputFile), Pos, Depth, Aim - Distance);
 		"down" ->
 			currentPos(InputFile, file:read_line(InputFile), Pos, Depth, Aim + Distance)
-	end,
-	ok.
-
+	end.
 

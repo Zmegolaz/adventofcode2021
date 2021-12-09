@@ -29,6 +29,5 @@ countIncreases(InputFile, FirstLineInt, SecondLineInt, ThirdLineInt, {ok, Fourth
 		true -> NewIncreases = Increases + 1;
 		false -> NewIncreases = Increases
 	end,
-	countIncreases(InputFile, SecondLineInt, ThirdLineInt, FourthLineInt, file:read_line(InputFile), NewIncreases),
-	ok.
+	countIncreases(InputFile, SecondLineInt, ThirdLineInt, FourthLineInt, file:read_line(InputFile), NewIncreases).
 
