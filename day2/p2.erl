@@ -9,7 +9,7 @@ start() ->
 	ok.
 
 currentPos(_, eof, Pos, Depth, _) ->
-	io:format("~s~n", [integer_to_list(Pos * Depth)]),
+	io:format("~w~n", [Pos * Depth]),
 	ok;
 
 % Skip empty lines.

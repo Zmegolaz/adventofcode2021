@@ -10,7 +10,7 @@ start() ->
 	ok.
 
 countIncreases(_, _, eof, Increases) ->
-	io:format("~s~n", [integer_to_list(Increases)]),
+	io:format("~w~n", [Increases]),
 	ok;
 
 % Skip empty lines.
